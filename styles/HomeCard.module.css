@@ -1,0 +1,24 @@
+.image {
+  height: 400px;
+}
+
+.board_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+
+.model {
+  padding-top: 56px;
+}
+
+.short_description {
+  padding: 16px 0px;
+  display: flex;
+  flex-direction:  column;
+  flex-wrap: wrap;
+  width: 200px;
+  justify-content: center;
+  text-align: center;
+}

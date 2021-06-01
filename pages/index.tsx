@@ -1,7 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import { API_URL } from "../utils/urls";
+import { API_URL, fromImageToUrl } from "../utils/urls";
+import Link from 'next/link'
+import HomeCard from '../components/HomeCard'
+import ArrowDown from '../public/ArrowDown'
 
 export default function Home({ boards}) {
   console.log (boards);
@@ -15,20 +18,11 @@ export default function Home({ boards}) {
     </Head>
     <div className={styles.container}>
       {boards.map((board)=> (
+      <>
+        <HomeCard board={board} />
 
-        <div className='board'>
-          <div className={styles.model}>
-            <h2> {board.model} </h2>
-          </div>
-
-          <div className={styles.short_description}>
-            <h3> {board.short_description} </h3>
-          </div>
-
-
-        </div>
-
-
+        <ArrowDown/>
+      </>
         ))}
 
     </div>

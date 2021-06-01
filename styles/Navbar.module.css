@@ -1,7 +1,18 @@
 .Navbar {
   display: flex;
   justify-content: space-between;
-  align-content: center;
+  align-items: center;
   flex-direction: row;
   padding: 0px 40px ;
+  height: 45px;
+  background-color: #F8D862;
+  color: #F50072;
+  width: 100%;
+  position: fixed;
+}
+
+.main_title {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
 }
