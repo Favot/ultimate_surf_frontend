@@ -6,6 +6,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+
 a {
   color: inherit;
   text-decoration: none;
@@ -13,14 +14,40 @@ a {
 
 * {
   box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
 }
 
 
 h1 {
   font-family: 'IBM Plex Mono', monospace;
+  font-size: 28px;
 }
 
 h2{
   font-family: 'IBM Plex Mono', monospace;
   font-weight: lighter;
+  font-size: 24px;
+}
+
+h3 {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+button {
+  all: unset;
+  color: #4F359B;
+  -webkit-text-fill-color: #4F359B;
+  cursor: pointer;
+  margin: 16px 0px;
+  padding: 8px 12px;
+  background: transparent;
+  border-radius: 20px;
+  border: #4F359B solid 1px;
+}
+
+button:focus {
+  outline: #4F359B 3px auto;
 }
