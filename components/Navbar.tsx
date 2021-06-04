@@ -39,7 +39,7 @@ const Navbar = () => {
 
 
 
-        <div className={style.auth}>
+        <div className={styles.auth}>
           {user ? (
             <Link href="/account">
               <a>{user.mail}</a>
