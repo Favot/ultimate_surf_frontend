@@ -17,6 +17,23 @@
   align-items: center;
 }
 
-.auth {
-  background-color: white;
+.menu {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  z-index: 3;
+  text-align: right;
+  background-color: #3B2358;
+  opacity: 0.7;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+}
+
+.menu a {
+  list-style-type: none;
+  padding: 8px;
+  font-family: 'IBM Plex Mono', monospace;
+  color: #FFFF;
 }

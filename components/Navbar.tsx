@@ -34,22 +34,32 @@ const Navbar = () => {
         </div>
       </div>
           {
-            isOpen ? (<div>test</div>) : null
+            isOpen ? (
+              <div className={styles.menu} >
+
+                  <Link  href={`/`}><a>All boards</a></Link>
+                  <Link  href={`/boards/hybrid`}><a>Hybrid boards</a></Link>
+                  <Link  href={`/boards/shortboard`}><a>Shortboard</a></Link>
+                  <Link  href={`/boards/softboard`}><a>Softboard</a></Link>
+                  <Link  href={`/boards/longboard`}><a>Longboard</a></Link>
+
+                  <div className={styles.auth}>
+                    {user ? (
+                      <Link href="/account">
+                        <a>{user.mail}</a>
+                      </Link>
+                      ) : (
+                      <Link  href="/login">
+                        <a>Log in</a>
+                      </Link>
+                      )}
+                  </div>
+
+              </div>) : null
           }
 
 
 
-        <div className={styles.auth}>
-          {user ? (
-            <Link href="/account">
-              <a>{user.mail}</a>
-            </Link>
-            ) : (
-            <Link  href="/login">
-              <a>Log in</a>
-            </Link>
-            )}
-        </div>
     </>
     )
 }
