@@ -17,10 +17,10 @@ export default function Login() {
   return (
     <>
     <div>
-      {/*<Head>
+      <Head>
         <tittle>Login</tittle>
         <meta name='description' content="Login here" />
-      </Head>*/}
+      </Head>
 
       <h2>Login</h2>
 
