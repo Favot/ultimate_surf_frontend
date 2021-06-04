@@ -15,7 +15,7 @@ const HomeCard = ({board}) => {
           </div>
           <img className={styles.image} src={fromImageToUrl(board.image)} alt=""/>
 
-          <Link  href={`/boards/${board.id}`}>
+          <Link  href={`/boards/${board.slug}`}>
             <button className={styles.link_show}>
               En savoir plus
             </button>
