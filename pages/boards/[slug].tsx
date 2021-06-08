@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '../../styles/BoardCard.module.css'
+import Link from 'next/link'
 
 // import BuyButton from '../../components/BuyButton'
 
@@ -36,6 +37,9 @@ const Board = ({board}) => {
                 <p>{board.description}</p>
               </div>
             </div>
+              <button>
+                <Link  href={`/`}><a>Back to all boards</a></Link>
+              </button>
           </div>
     </div>
   )

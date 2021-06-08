@@ -2,6 +2,7 @@
   display: flex;
   margin: 80px 20px;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -24,4 +25,11 @@
   color: black;
   text-align: justify;
   padding: 16px 8px;
+}
+
+.board_card .button {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
