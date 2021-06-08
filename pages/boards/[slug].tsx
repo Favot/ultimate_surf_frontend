@@ -23,23 +23,24 @@ const Board = ({board}) => {
         </Head>
 
           <div className={styles.board_card}>
+
+            <div className={styles.board_info}>
+              <h2>{board.type}</h2>
+              <h1>{board.model}</h1>
+            </div>
             <div className={styles.board_pic}>
               <img src={fromImageToUrl(board.image)} />
             </div>
-            <div className={styles.board_text}>
-              <div className={styles.board_info}>
-                <h2>{board.type}</h2>
-                <h1>{board.model}</h1>
-                  {/*<BuyButton board={board} />*/}
-                <h1>{board.price} €</h1>
-              </div>
-              <div className={styles.board_description}>
-                <p>{board.description}</p>
-              </div>
+            <div className={styles.board_buy}>
+                {/*<BuyButton board={board} />*/}
+              <h1>{board.price} €</h1>
             </div>
-              <button>
-                <Link  href={`/`}><a>Back to all boards</a></Link>
-              </button>
+            <div className={styles.board_description}>
+              <p>{board.description}</p>
+            </div>
+            <button>
+              <Link  href={`/`}><a>Back to all boards</a></Link>
+            </button>
           </div>
     </div>
   )

@@ -1,14 +1,13 @@
 .board_card {
   display: flex;
   margin: 80px 20px;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.board_text {
+.board_pic {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
 }
 
 .board_pic img {
@@ -17,8 +16,9 @@
 
 .board_info {
   color: #3B2358;
-  text-align: center;
-  padding: 16px 8px;
+  text-align: left;
+  padding: 16px 0px;
+
 }
 
 .board_description{
@@ -27,9 +27,13 @@
   padding: 16px 8px;
 }
 
-.board_card .button {
+.button {
   display: flex;
-  align-content: center;
   justify-content: center;
   align-items: center;
+  width: fit-content;
+}
+
+.board_buy h1 {
+  text-align: right;
 }
