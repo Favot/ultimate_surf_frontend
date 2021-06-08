@@ -3,12 +3,14 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  padding: 0px 40px ;
+  padding: 0px 25px ;
   height: 45px;
-  background-color: #F8D862;
-  color: #F50072;
+  /*background-color: #F8D862;*/
+  color: #3B2358;
   width: 100%;
   position: fixed;
+  top: 0;
+  right: -20;
 }
 
 .main_title {
@@ -20,7 +22,7 @@
 .menu {
   position: absolute;
   top: 50px;
-  right: 20px;
+  right: 5px;
   z-index: 3;
   text-align: right;
   background-color: #3B2358;
