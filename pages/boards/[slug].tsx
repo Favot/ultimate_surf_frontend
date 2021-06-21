@@ -7,7 +7,7 @@ import Link from 'next/link'
 import { fromImageToUrl, API_URL } from '../../utils/urls'
 // import { twoDecimals } from '../../utils/format'
 
-const Board = ({board}) => {
+const Board = ({board, size}) => {
   return (
     <div>
 
@@ -32,8 +32,19 @@ const Board = ({board}) => {
               <img src={fromImageToUrl(board.image)} />
             </div>
             <div className={styles.board_buy}>
-                {/*<BuyButton board={board} />*/}
               <h1>{board.price} €</h1>
+                {/*<BuyButton board={board} />*/}
+                <h3>SIZE</h3>
+              <select>
+                {board.size_ids.map((size)=>(
+                    <option>{size.size_feet}</option>
+                    ),
+                  )}
+              </select>
+
+              <button className={styles.add_basket}>
+                <Link  href={board}><a>Add to basket</a></Link>
+              </button>
             </div>
             <div className={styles.board_description}>
               <p>{board.description}</p>

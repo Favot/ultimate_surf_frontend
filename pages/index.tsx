@@ -6,8 +6,8 @@ import Link from 'next/link'
 import HomeCard from '../components/HomeCard'
 import ArrowDown from '../public/ArrowDown'
 
-export default function Home({ boards}) {
-  console.log (boards);
+export default function Home({ boards, sizes}) {
+  console.log (sizes);
 
   return (
     <>
@@ -34,9 +34,11 @@ export default function Home({ boards}) {
 export async function getStaticProps() {
   const product_res = await fetch(`${API_URL}/boards/`);
   const boards = await product_res.json();
+  const product_siz = await fetch(`${API_URL}/sizes/`);
+  const sizes = await product_siz.json();
   return {
     props: {
-      boards,
+      boards, sizes,
     },
   };
 }
