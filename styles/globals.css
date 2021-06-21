@@ -45,6 +45,7 @@ button {
   background: transparent;
   border-radius: 20px;
   border: #4F359B solid 1px;
+  text-align: -webkit-center;
 }
 
 button:focus {
